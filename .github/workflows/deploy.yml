@@ -17,12 +17,12 @@ jobs:
           host: 45.79.125.127
           username: root
           key: -----BEGIN OPENSSH PRIVATE KEY-----
-b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
-QyNTUxOQAAACBbvlwWFOz2mv1qBx665AuRi5568cCnhsGdq5HLfXWEPwAAAJh0xQzldMUM
-5QAAAAtzc2gtZWQyNTUxOQAAACBbvlwWFOz2mv1qBx665AuRi5568cCnhsGdq5HLfXWEPw
-AAAEAqDteVSJUUQZHXFNmJlmbBvFsvWeHvMCm1WstPSUGflVu+XBYU7Paa/WoHHrrkC5GL
-nnrxwKeGwZ2rkct9dYQ/AAAADmdpdGh1Yi1hY3Rpb25zAQIDBAUGBw==
------END OPENSSH PRIVATE KEY-----
+        b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+        QyNTUxOQAAACBbvlwWFOz2mv1qBx665AuRi5568cCnhsGdq5HLfXWEPwAAAJh0xQzldMUM
+        5QAAAAtzc2gtZWQyNTUxOQAAACBbvlwWFOz2mv1qBx665AuRi5568cCnhsGdq5HLfXWEPw
+        AAAEAqDteVSJUUQZHXFNmJlmbBvFsvWeHvMCm1WstPSUGflVu+XBYU7Paa/WoHHrrkC5GL
+        nnrxwKeGwZ2rkct9dYQ/AAAADmdpdGh1Yi1hY3Rpb25zAQIDBAUGBw==
+        -----END OPENSSH PRIVATE KEY-----
 
           script: |
             cd /var/www/html/crud-cicd-practice
