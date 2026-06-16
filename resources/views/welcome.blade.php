@@ -6,12 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Welcome to Laravel</h1>
-    <p>This is the welcome page.</p>
-    <p>This is the welcome page.2</p>
-    <p>This is the welcome page.3</p>
-    <p>This is the welcome page.4</p>
-    <p>Test Composer</p>
-    <p>Test optimize</p>
+   <h1>Welcome to Laravel</h1>
 </body>
 </html>
