@@ -12,5 +12,6 @@
     <p>This is the welcome page.3</p>
     <p>This is the welcome page.4</p>
     <p>Test Composer</p>
+    <p>Test optimize</p>
 </body>
 </html>
