@@ -156,7 +156,7 @@
         <h3>✓ Login Successful</h3>
         <p>Your details have been submitted successfully.</p>
         <button class="close-btn" onclick="closePopup()">
-            OKAY
+            OK
         </button>
     </div>
 </div>
