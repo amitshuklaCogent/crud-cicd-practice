@@ -136,7 +136,7 @@
     <form id="loginForm">
         <div class="input-group">
             <label>Email</label>
-            <input type="email" id="email" required>
+            <input type="text" id="email" required>
         </div>
 
         <div class="input-group">
