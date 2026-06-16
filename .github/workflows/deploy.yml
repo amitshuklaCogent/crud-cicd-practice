@@ -19,18 +19,16 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
 
           script: |
-            cd /var/www/html/crud-cicd-practice
+                cd /var/www/html/crud-cicd-practice
 
-            git pull origin main
+                git pull origin main
 
-            composer install --no-dev --optimize-autoloader --ignore-platform-req=php
+                composer install --no-dev --optimize-autoloader --ignore-platform-req=php
 
-            composer install --no-dev --optimize-autoloader
+                php artisan migrate --force
 
-            php artisan migrate --force
+                php artisan optimize:clear
 
-            php artisan optimize:clear
-
-            php artisan config:cache
-            php artisan route:cache
-            php artisan view:cache
+                php artisan config:cache
+                php artisan route:cache
+                php artisan view:cache
