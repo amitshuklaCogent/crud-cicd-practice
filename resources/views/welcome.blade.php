@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Custom Login Page</title>
+<title>Login Page</title>
 
 <style>
     *{
@@ -156,7 +156,7 @@
         <h3>✓ Login Successful</h3>
         <p>Your details have been submitted successfully.</p>
         <button class="close-btn" onclick="closePopup()">
-            OK
+            OKAY
         </button>
     </div>
 </div>
