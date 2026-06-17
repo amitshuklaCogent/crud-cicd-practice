@@ -131,7 +131,7 @@
 <body>
 
 <div class="login-container">
-    <h2>Login</h2>
+    <h2>Hello, Welcome!</h2>
 
     <form id="loginForm">
         <div class="input-group">
