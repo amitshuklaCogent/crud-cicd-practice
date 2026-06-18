@@ -6,7 +6,7 @@
     <title>Amit's Page</title>
 </head>
 <body>
-    <h1>Hello Amit! this is my Page</h1>
+    <h1>Hello Amit! this is my myj</h1>
     <h1>Welcome to my Page amit-shukla</h1>
     <h1>Main branch</h1>
 </body>
