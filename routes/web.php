@@ -7,5 +7,4 @@ Route::get('/', function () {
 });
 Route::get('/test', function () {
      return view('amit');
-    //return view('welcome');
 });
