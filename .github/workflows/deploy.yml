@@ -1,4 +1,4 @@
-name: Deploy React
+name: Deploy Laravel
 
 on:
   push:
@@ -10,35 +10,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
-      - name: Install Dependencies
-        run: npm ci
-
-      - name: Build Project
-        run: npm run build
-
-      - name: Upload Build Files
-        uses: appleboy/scp-action@v0.1.7
-        with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.SSH_KEY }}
-          source: "dist/*"
-          target: "/var/www/html/react-app"
-
-      - name: Fix Structure on Server
+      - name: Deploy to Server
         uses: appleboy/ssh-action@v1.2.0
+
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSH_KEY }}
+
           script: |
-            cp -r /var/www/html/react-app/dist/* /var/www/html/react-app/ 2>/dev/null || true
-            rm -rf /var/www/html/react-app/dist
+                cd /var/www/html/crud-cicd-practice
+
+                git pull origin main
+
+                composer install --no-dev --optimize-autoloader --ignore-platform-req=php
+
+                php artisan migrate --force
+
+                php artisan config:cache
+                php artisan route:cache
+                php artisan view:cache
+                php artisan optimize:clear
