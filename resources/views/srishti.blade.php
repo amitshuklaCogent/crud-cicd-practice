@@ -10,7 +10,7 @@
 <body>
 
 <div class="login-container">
-    <h2>Welcome Srishti</h2>
+    <h2>Welcome Srishti Govind Rao</h2>
 
     <form id="loginForm">
         <div class="input-group">
@@ -25,6 +25,9 @@
 
         <button type="submit" class="login-btn">
             Login
+        </button>
+        <button type="forgot" class="login-btn">
+            forgot password
         </button>
     </form>
 </div>
