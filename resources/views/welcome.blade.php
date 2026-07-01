@@ -154,7 +154,7 @@
 <div class="popup-overlay" id="popupOverlay">
     <div class="popup">
         <h3>✓ Login Successful</h3>
-        <p>Your details have been submitted successfully.</p>
+        <p>Your details have been submitted.</p>
         <button class="close-btn" onclick="closePopup()">
             OKAY
         </button>
